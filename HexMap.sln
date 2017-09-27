@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMap.CSharp.Plugins", "HexMap.CSharp.Plugins.csproj", "{1BEC69FE-1FCD-F717-DBA2-F16D817F5CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMap.CSharp", "HexMap.CSharp.csproj", "{4004E122-A500-F8BD-DA5E-DC2E071A0003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexMap.CSharp.Editor", "HexMap.CSharp.Editor.csproj", "{E5D78CBB-3F24-297D-A466-2F05FF063121}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BEC69FE-1FCD-F717-DBA2-F16D817F5CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEC69FE-1FCD-F717-DBA2-F16D817F5CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEC69FE-1FCD-F717-DBA2-F16D817F5CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEC69FE-1FCD-F717-DBA2-F16D817F5CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4004E122-A500-F8BD-DA5E-DC2E071A0003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4004E122-A500-F8BD-DA5E-DC2E071A0003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4004E122-A500-F8BD-DA5E-DC2E071A0003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4004E122-A500-F8BD-DA5E-DC2E071A0003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D78CBB-3F24-297D-A466-2F05FF063121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D78CBB-3F24-297D-A466-2F05FF063121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D78CBB-3F24-297D-A466-2F05FF063121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D78CBB-3F24-297D-A466-2F05FF063121}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
