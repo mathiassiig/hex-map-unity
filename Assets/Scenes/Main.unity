@@ -377,6 +377,16 @@ Prefab:
       propertyPath: HexGrid
       value: 
       objectReference: {fileID: 1097032081}
+    - target: {fileID: 224148060530706786, guid: d59d3703d2e32b645aabb23357e122c9,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224504065634205598, guid: d59d3703d2e32b645aabb23357e122c9,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d59d3703d2e32b645aabb23357e122c9, type: 2}
   m_IsPrefabParent: 0

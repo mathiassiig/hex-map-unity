@@ -32,13 +32,16 @@ namespace HexMap
             }
         }
 
-        public void ColorCell(Vector3 position, Color color)
+        public HexCell GetCell(Vector3 position)
         {
             position = transform.InverseTransformPoint(position);
             HexCoordinates coordinates = HexCoordinates.FromPosition(position);
             int index = coordinates.X + coordinates.Z * _width + coordinates.Z / 2;
-            HexCell cell = _cells[index];
-            cell.Color = color;
+            return _cells[index];
+        }
+
+        public void Refresh()
+        {
             _mesh.Triangulate(_cells);
         }
 

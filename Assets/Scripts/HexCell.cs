@@ -9,6 +9,23 @@ namespace HexMap
         public TextMeshPro Text;
         public HexCoordinates HexCoords;
         public Color Color;
+        public int Elevation
+        {
+            get
+            {
+                return _elevation;
+            }
+            set
+            {
+                _elevation = value;
+                Vector3 position = transform.localPosition;
+                position.y = value * HexMetrics.ElevationStep;
+                transform.localPosition = position;
+            }
+        }
+
+        private int _elevation;
+
         [SerializeField] private HexCell[] _neighbors;
 
         public HexCell GetNeighbor(HexDirection direction)

@@ -8,9 +8,12 @@ namespace HexMap
     {
         [SerializeField] private ToggleGroup _colorToggleGroup;
         [SerializeField] private Toggle _togglePrefab;
+        [SerializeField] private Slider _elevationSlider;
         public Color[] Colors;
         public HexGrid HexGrid;
         private Color _activeColor;
+
+        private int _activeElevation;
 
         void Awake()
         {
@@ -30,6 +33,12 @@ namespace HexMap
                 });
             }
             _colorToggleGroup.transform.GetChild(0).GetComponent<Toggle>().isOn = true;
+
+
+            _elevationSlider.onValueChanged.AddListener((elevation) =>
+            {
+                SetElevation(elevation);
+            });
         }
 
         void Update()
@@ -46,8 +55,20 @@ namespace HexMap
             RaycastHit hit;
             if (Physics.Raycast(inputRay, out hit))
             {
-                HexGrid.ColorCell(hit.point, _activeColor);
+                EditCell(HexGrid.GetCell(hit.point));
             }
+        }
+
+        public void SetElevation(float elevation)
+        {
+            _activeElevation = (int)elevation;
+        }
+
+        void EditCell(HexCell cell)
+        {
+            cell.Color = _activeColor;
+            cell.Elevation = _activeElevation;
+            HexGrid.Refresh();
         }
 
         public void SelectColor(Color c)
