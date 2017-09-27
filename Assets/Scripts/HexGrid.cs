@@ -61,7 +61,35 @@ namespace HexMap
             cell.HexCoords = HexCoordinates.FromOffsetCoordinates(x, z);
             cell.Text.text = cell.HexCoords.ToStringOnSeparateLines();
             cell.Color = DefaultColor;
+            SetUpNeighbors(cell, x, z, i);
 
+        }
+
+        private void SetUpNeighbors(HexCell cell, int x, int z, int i)
+        {
+            if (x > 0)
+            {
+                cell.SetNeighbor(HexDirection.W, _cells[i - 1]);
+            }
+            if (z > 0)
+            {
+                if ((z & 1) == 0)
+                {
+                    cell.SetNeighbor(HexDirection.SE, _cells[i - _width]);
+                    if (x > 0)
+                    {
+                        cell.SetNeighbor(HexDirection.SW, _cells[i - _width - 1]);
+                    }
+                }
+                else
+                {
+                    cell.SetNeighbor(HexDirection.SW, _cells[i - _width]);
+                    if (x < _width - 1)
+                    {
+                        cell.SetNeighbor(HexDirection.SE, _cells[i - _width + 1]);
+                    }
+                }
+            }
         }
     }
 }

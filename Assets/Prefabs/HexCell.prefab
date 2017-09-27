@@ -111,6 +111,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 114996392602557246}
+  HexCoords:
+    x: 0
+    z: 0
+  Color: {r: 0, g: 0, b: 0, a: 0}
+  _neighbors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114996392602557246
 MonoBehaviour:
   m_ObjectHideFlags: 1
