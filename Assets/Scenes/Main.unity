@@ -261,11 +261,6 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 33409564397715968, guid: 0bba59f454d53dc45899003daaab68cf,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bba59f454d53dc45899003daaab68cf, type: 2}
   m_IsPrefabParent: 0
@@ -380,12 +375,17 @@ Prefab:
     - target: {fileID: 224148060530706786, guid: d59d3703d2e32b645aabb23357e122c9,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224504065634205598, guid: d59d3703d2e32b645aabb23357e122c9,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002783645170050, guid: d59d3703d2e32b645aabb23357e122c9,
+        type: 2}
+      propertyPath: m_WholeNumbers
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d59d3703d2e32b645aabb23357e122c9, type: 2}
